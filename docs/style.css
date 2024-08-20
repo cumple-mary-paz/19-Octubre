@@ -88,10 +88,16 @@ a {
   }
 }
 
-.icons {
+.icon-u {
   width: 18px;
   filter: invert(100%) brightness(0) saturate(100%) invert(30%) sepia(100%)
     saturate(600%) hue-rotate(-20deg) brightness(105%) contrast(100%) !important;
+}
+
+.icon-w {
+  width: 18px;
+  filter: invert(100%) brightness(0) saturate(100%) invert(30%) sepia(100%) 
+    saturate(600%) hue-rotate(90deg) brightness(105%) contrast(100%) !important;
 }
 
 .preloader {

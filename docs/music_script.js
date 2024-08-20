@@ -1,12 +1,14 @@
-const isMobile = "ontouchstart" in window || navigator.msMaxTouchPoints > 0;
+// const isMobile = "ontouchstart" in window || navigator.msMaxTouchPoints > 0;
 
-console.log("MOBILE: " + isMobile);
+// console.log("MOBILE: " + isMobile);
 
-if (!isMobile) {
-  window.onresize = function () {
-    location.reload();
-  };
-}
+// if (!isMobile) {
+//   window.onresize = function () {
+//     location.reload();
+//   };
+// }
+
+const isMobile = true
 
 let F = document.getElementById("miAudio");
 const elem = document.documentElement;
