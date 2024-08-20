@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const balloons = document.querySelectorAll(".balloon");
+  const balloons = document.querySelectorAll("#balloon");
 
   const xPositions = Array.from(
     { length: balloons.length },
