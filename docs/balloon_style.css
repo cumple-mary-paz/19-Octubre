@@ -1,0 +1,40 @@
+.balloon-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.balloon {
+  position: absolute;
+  bottom: -150px;
+  width: 60px;
+  height: 80px;
+  background: radial-gradient(circle, #ffd700 20%, #ffa500);
+  border-radius: 50% 50% 45% 45%;
+  box-shadow: 0 0 10px #ffd700;
+}
+
+.balloon::before {
+  content: "";
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  width: 2px;
+  height: 60px;
+  background: #555;
+  transform: translateX(-50%);
+}
+
+.balloon::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #ffd700;
+  transform: translateX(-50%) rotate(180deg);
+}
